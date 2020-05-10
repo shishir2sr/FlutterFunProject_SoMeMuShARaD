@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 import 'package:audioplayers/audio_cache.dart';
 
@@ -30,9 +31,10 @@ class Brothers extends StatelessWidget {
         ),
         body: SafeArea(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[           
-            playSound(Colors.black, 1),
-            playSound(Colors.green, 2),
+            playSound(Colors.red[400], 1),
+            playSound(Colors.white12, 2),
             playSound(Colors.yellow, 3),
             playSound(Colors.green, 4),
             playSound(Colors.green, 5),
